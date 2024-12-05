@@ -81,7 +81,9 @@ export function Speedometer({ value, maxValue }: SpeedometerProps) {
           stroke="#56c70a"
           strokeWidth="3"
           transform={`rotate(${rotation - 120} 100 100)`}
-          style={{ transition: 'transform 0.5s ease-out' }}
+          style={{ transition: 'transform 0.5s ease-out',
+                 filter: 'drop-shadow(0px 0px 4px #56c70a)',
+                 }}
         />
         <circle cx="100" cy="100" r="5" fill="#56c70a" />
 
